@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wicks.user.klaboo.Signup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/login_logo"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editext_background"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10sp"
+                    android:hint="E-mail Address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15sp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/white"
+                    />
+                <EditText
+                    android:id="@+id/phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editext_background"
+                    android:drawableLeft="@drawable/mobile_number"
+                    android:drawablePadding="10sp"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:hint="@string/phone"
+                    android:paddingLeft="15sp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/white"
+                    />
+
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/editext_background"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="10sp"
+                    android:hint="@string/pass"
+                    android:paddingLeft="15sp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/white"
+                    />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="right"
+                >
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/red_btn"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</layout>
